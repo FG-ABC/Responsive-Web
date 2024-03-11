@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #e7eaf6;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 10px
+        }
+
+        input, select{
+            height:20px;
+            margin:0px;
+            border-radius: 5px;
+            border:none;
+            width: 80%;
+            align-self:center;
+        }
+
+        #radiodiv{
+            margin:0px;
+            border-radius: 5px;
+            border:none;
+            width: 80%;
+            align-self:center;
+        }
+        #container{
+            width: 80%;
+            background-color: #a2a8d3;
+            margin-top: 20px;
+        }
+
+        #survey-form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #description{
+            text-align: center;
+            margin: 10px;
+        }
+
+        #radiodiv{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            align-self: flex-start;
+            width: 30%;
+            padding: 5px;
+            gap: 5px;
+            margin-left: 30px;
+        }
+
+        #checkdiv{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-self: flex-start;
+            width: 70%;
+            padding: 5px;
+            gap: 5px;
+            margin-left: 30px;
+        }
+        
+        .prompt{
+            margin-bottom:5px;
+            margin-top: 5px;
+            padding-left: 25px;
+        }
+
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">FG Survey Form</h1>
+        <p id="description">A small survery FG made</p>  
+        <form id="survey-form">
+            <label class="prompt" id="name-label">Name:</label>
+            <input id="name" type="text" placeholder="Bogieman" required>
+            <label class="prompt" id="email-label">Email:</label>
+            <input id="email" type="email" placeholder="Bogie@gmail.com" required>  
+            <label class="prompt" id="number-label">Favorite number less than 100:</label>
+            <input id="number" type="number" min="0" max="100" placeholder="0999 123 1234"> 
+            <label class="prompt" id="email-label">Bogie ka ba?</label>
+            <select id="dropdown">
+                <option value="">Choose an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label class="prompt" id="radio-label">Really ba yan?</label>
+            <div id="radiodiv">
+                <label for="really">Yes</label>
+                <input type="radio" id="really" name="radiochoice" value="yes" checked />
+                <label for="really">No</label>
+                <input type="radio" id="really" name="radiochoice" value="no" />
+            </div>
+
+            <label class="prompt" id="check-label">Select all that apply:</label>
+            <div id="checkdiv">
+                <input type="checkbox" id="select" name="select" value="Iam" />
+                <label for="select">I am a bogieman</label> 
+               
+                <input type="checkbox" id="coding" name="select" value="Ako" />
+                <label for="select">Bogieman ako</label>
+
+                <input type="checkbox" id="coding" name="select" value="Me" />
+                <label for="select">Bogie is me</label>
+            </div>
+            
+            <label class="prompt" id="text-label">Any thoughts?</label>
+            <textarea id="comments" name="comments" rows="5" cols="30">Isa pala akong bogie.
+            </textarea>
+
+            <br/>
+            <input type="button" id="submit" value="Submit Form" />
+
+        </form>
+
+    </div>
+</body>
+</html>
+
