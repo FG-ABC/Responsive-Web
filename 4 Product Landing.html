@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Landing</title>
+</head>
+<body>
+    <!-- Navbar / Header -->
+    <header id="header" class = "fixed z=100 bg-blue-600 w-full h-32 sm:h-14 flex justify-center text-gray-50">
+       <div class="w-5/6 grid sm:grid-cols-2 content-center h-full ">
+        <div class = "flex content-center justify-center sm:justify-start">
+            <img id="header-img" class="w-14 " src="https://icon-library.com/images/drink-icon-png/drink-icon-png-23.jpg" alt="drink-24-regular" style="color:#ffffff"></img>
+            <h1 class="text-2xl pt-3 ">Jack's Protein</h1>
+        </div>
+        <nav class = "flex content-center justify-center sm:justify-end">
+            <ul class="text-center sm:flex sm:items-center gap-10" >
+                <li><a href="#features" class="text-m nav-link">Features</a></li>
+                <li><a href="#video" class="text-m nav-link">Product Demo</a></li>
+                <li><a href="#prices" class="text-m nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+       </div>
+    </header>
+    
+    <div id="behindheader" class="bg-blue-600 w-full h-32 sm:h-14"></div>
+
+    <!-- Body -->
+    <main class= "flex flex-col items-center justify-center">
+        
+        <!-- Jumbotron with Form -->    
+        <div class="flex w-screen justify-center items-center">
+            <div class="flex flex-col w-2/3 border border-sky-950 justify-center items-center">
+                <div id="image-holder" class="border">  
+                    <img class="w-20" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjojMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJoLWZ1bGwgdy1mdWxsIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgcng9IjMwIiBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSJ0cmFuc3BhcmVudCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2Utb3BhY2l0eT0iMTAwJSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PC9yZWN0Pjxzdmcgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IiMwMDAwMDAiIHg9IjEyOCIgeT0iMTI4IiByb2xlPSJpbWciIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt2ZXJ0aWNhbC1hbGlnbjptaWRkbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iYmxhY2siPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTE1LjcyIDIuMjJhLjc1Ljc1IDAgMCAxIDEuMDYxIDEuMDZMMTUuNTYgNC41aDIuMTljLjMxOCAwIC42LjIuNzA3LjQ5OGwxLjI1IDMuNUEuNzUuNzUgMCAwIDEgMTkgOS41aC0xLjA0NWwtMS41ODcgMTAuMDVjLS4yMSAxLjQ2NS0xLjQ2IDIuNDUtMi45NyAyLjQ1aC0yLjc5NmMtMS41MTEgMC0yLjc2MS0uOTg1LTIuOTY5LTIuNDRMNi4wNDUgOS41SDUuMDAxYS43NS43NSAwIDAgMS0uNzA3LTEuMDAybDEuMjUtMy41YS43NS43NSAwIDAgMSAuNzA3LS40OThoNy4xODhsMi4yODEtMi4yOFptLjcxNyA3LjI4SDcuNTYzbDEuNTU1IDkuODM3Yy4wOTkuNjk1LjY5MiAxLjE2MyAxLjQ4NCAxLjE2M0gxMy40Yy43OTIgMCAxLjM4NS0uNDY4IDEuNDg2LTEuMTc0TDE2LjQzNyA5LjVabS43ODUtMy41SDYuNzhsLS43MTQgMmgxMS44NzFsLS43MTQtMloiPjwvcGF0aD48L2c+PC9zdmc+PC9zdmc+" alt="drink-to-go-24-regular" style="color:#000000"></img>
+                </div>
+                <div class="border">
+                    <h1 class="text-lg">Jumbotron with the picture</h1>
+                </div>
+                <div id="image-holder" class="border text-center">
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio sunt repellenduss</p>  
+                </div>
+                <div class = "mt-3 gap-8 border flex">
+                    <form action="https://www.freecodecamp.com/email-submit" class="flex-col flex">
+                        <input id="email" type="email" placeholder="Enter your email here" class="text-center border-black border-2 ">
+
+                        </input>
+                        <input id="submit" type="submit">
+                        </input>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div id="features" class="flex flex-col md:flex-row w-5/6 justify-center items-center mt-7">
+            <div class="flex flex-col border border-sky-950 justify-center p-5">
+                <div id="image-holder" class="border h-12 w-12 bg-black">   
+                </div>
+                <div class="border">
+                    <h1 class="text-lg">Jumbotron with the picture</h1>
+                </div>
+                <div id="image-holder" class="border">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                </div>
+                <div class = "mt-3 gap-5 border flex">
+                    <h2>Button 1</h2>
+                </div>
+            </div>
+            <div class="flex flex-col border border-sky-950 justify-center p-5">
+                <div id="image-holder" class="border h-12 w-12 bg-black">   
+                </div>
+                <div class="border">
+                    <h1 class="text-lg">Jumbotron with the picture</h1>
+                </div>
+                <div id="image-holder" class="border">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                </div>
+                <div class = "mt-3 gap-5 border flex">
+                    <h2>Button 1</h2>
+                </div>
+            </div>
+            <div class="flex flex-col border border-sky-950 justify-center p-5">
+                <div id="image-holder" class="border h-12 w-12 bg-black">   
+                </div>
+                <div class="border">
+                    <h1 class="text-lg">Jumbotron with the picture</h1>
+                </div>
+                <div id="image-holder" class="border">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                </div>
+                <div class = "mt-3 gap-5 border flex">
+                    <h2>Button 1</h2>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Video player -->
+        <div id="video" class="flex justify-center w-full max-w-lg mt-7">
+            <iframe width="100%" height="350px" src="https://www.youtube.com/embed/Gh9Dv5D5aCM?si=euhcN48MZtAJV5kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Prices -->
+        <div id="prices" class="flex flex-col md:flex-row w-5/6 justify-center items-center mt-7 gap-7">
+            
+            <div class="flex flex-col border border-sky-950 justify-center">
+                <div id="price-title" class="bg-slate-400 h-12 flex justify-center items-center">
+                    <h2 class="text-3xl">500g plan </h2>
+                </div>
+                <div class="p-5">
+                    <div class="border text-6xl w-full text-center">   
+                        $1.99
+                    </div>
+                    <div class="pt-5 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                    </div>
+                    <div class = "mt-3 text-center">
+                        <h2>Buy Now</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col border border-sky-950 justify-center">
+                <div id="price-title" class="bg-slate-400 h-12 flex justify-center items-center">
+                    <h2 class="text-3xl">1kg plan </h2>
+                </div>
+                <div class="p-5">
+                    <div class="border text-6xl w-full text-center">   
+                        $5.99
+                    </div>
+                    <div class="pt-5 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                    </div>
+                    <div class = "mt-3 text-center">
+                        <h2>Buy Now</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col border border-sky-950 justify-center">
+                <div id="price-title" class="bg-slate-400 h-12 flex justify-center items-center">
+                    <h2 class="text-3xl">10kg plan </h2>
+                </div>
+                <div class="p-5">
+                    <div class="border text-6xl w-full text-center">   
+                        $9.99
+                    </div>
+                    <div class="pt-5 text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique nesciunt, quis eos repellat illo fugiat qui dolore ea tempora eligendi ut sit. Quae quisquam quo dolor qui molestiae quidem?</p>    
+                    </div>
+                    <div class = "mt-3 text-center">
+                        <h2>Buy Now</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 w-full h-16 mt-7 flex justify-center text-gray-50">
+        <nav class = "flex flex-col border w-5/6 justify-center items-end pr-2">
+            <ul class="flex-row flex text-end gap-10" >
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul>
+            <h3>
+                Copyright 2024, FG
+            </h3>
+        </nav>
+    </footer>
+
+
+</body>
+</html>
